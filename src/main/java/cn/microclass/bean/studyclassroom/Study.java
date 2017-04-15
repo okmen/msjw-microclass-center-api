@@ -17,7 +17,7 @@ public class Study implements Serializable {
 	
 	private String scoreEndDate; //积分结束周期
 	
-	private int integral; //用户积分
+	private String integral; //累计积分
 	
 	private List<StudyRecord> studyRecord; //学习记录0到多条
 	
@@ -27,14 +27,20 @@ public class Study implements Serializable {
 	
 	private String ansLogarithm;
 	
+	private String mobilephone;
 	
-	private int subjectId; //取题编号
+	private String subjectId; //取题编号
+	
+	private String interfaceId; //接口编号
+	private String answerDateTime;//取题时间
 	
 	private String subjectName;//题目名称
 	
 	private int subjecttype; //取题类型  1代表文字类型,2代表图片类型
 	
-	private int testQuestionsType; //试题类型   1判断题，2选择题
+	private String testQuestionsType; //试题类型  判断题，选择题
+	
+	private String serviceType; //业务类型
 	
 	private String subjectImg; //题目图片路径 
 	
@@ -46,14 +52,72 @@ public class Study implements Serializable {
 	
 	private int surplusAnswe;//剩余题数
 	
-	private int answerState; //答题状态  0代表当天无法再次进行消分学习 	1可以答题	2代表今天消分学习已答对10题，请明天继续
+	private int answerState; //答题状态  0代表当天无法再次进行消分学习 	1可以答题	2代表今天消分学习已答对10题，请明天继续 3.已经答满20题 不能继续答题了
 	
 	private List<Answeroptions> answeroptions; //答案选项
 	
 	private String subjectAnswer; //答题答案
 	private int answerCount; //答题总数
 	private int answerCorrect;//答对题数
+	private String ipAddress;//IP地址
+	private String userSource;
+	private String code;
+	private String msg;
+	private Object data;
+	/**
+	 * 用户id
+	 */
 	
+    private String userid;
+	/**
+	 * 用户密码
+	 */
+   
+    private String userpwd;
+    /**
+     * 请求地址
+     */
+   
+    private String url;
+    /**
+     * 方法
+     */
+    
+    private String method;
+    /**
+     * 秘钥
+     */
+    private String key;
+	public String getUserid() {
+		return userid;
+	}
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+	public String getUserpwd() {
+		return userpwd;
+	}
+	public void setUserpwd(String userpwd) {
+		this.userpwd = userpwd;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getMethod() {
+		return method;
+	}
+	public void setMethod(String method) {
+		this.method = method;
+	}
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
 
 	public String getClassroomId() {
 		return classroomId;
@@ -126,13 +190,6 @@ public class Study implements Serializable {
 
 	
 
-	public int getIntegral() {
-		return integral;
-	}
-
-	public void setIntegral(int integral) {
-		this.integral = integral;
-	}
 
 	public int getIsComplete() {
 		return isComplete;
@@ -142,11 +199,11 @@ public class Study implements Serializable {
 		this.isComplete = isComplete;
 	}
 
-	public int getSubjectId() {
+	public String getSubjectId() {
 		return subjectId;
 	}
 
-	public void setSubjectId(int subjectId) {
+	public void setSubjectId(String subjectId) {
 		this.subjectId = subjectId;
 	}
 
@@ -162,15 +219,9 @@ public class Study implements Serializable {
 		return subjecttype;
 	}
 
-	public void setSubjecttype(int subjecttype) {
-		this.subjecttype = subjecttype;
-	}
 
-	public int getTestQuestionsType() {
-		return testQuestionsType;
-	}
 
-	public void setTestQuestionsType(int testQuestionsType) {
+	public void setTestQuestionsType(String testQuestionsType) {
 		this.testQuestionsType = testQuestionsType;
 	}
 
@@ -239,13 +290,7 @@ public class Study implements Serializable {
 		this.answerCount = answerCount;
 	}
 
-	public int getAnswerCorrect() {
-		return answerCorrect;
-	}
-
-	public void setAnswerCorrect(int answerCorrect) {
-		this.answerCorrect = answerCorrect;
-	}
+	
 
 	public List<StudyRecord> getStudyRecord() {
 		return studyRecord;
@@ -253,6 +298,80 @@ public class Study implements Serializable {
 
 	public void setStudyRecord(List<StudyRecord> studyRecord) {
 		this.studyRecord = studyRecord;
+	}
+
+
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public String getMsg() {
+		return msg;
+	}
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	public Object getData() {
+		return data;
+	}
+	public void setData(Object data) {
+		this.data = data;
+	}
+	public String getIpAddress() {
+		return ipAddress;
+	}
+	public void setIpAddress(String ipAddress) {
+		this.ipAddress = ipAddress;
+	}
+	public String getUserSource() {
+		return userSource;
+	}
+	public void setUserSource(String userSource) {
+		this.userSource = userSource;
+	}
+	public String getMobilephone() {
+		return mobilephone;
+	}
+	public void setMobilephone(String mobilephone) {
+		this.mobilephone = mobilephone;
+	}
+	public String getInterfaceId() {
+		return interfaceId;
+	}
+	public void setInterfaceId(String interfaceId) {
+		this.interfaceId = interfaceId;
+	}
+	public String getAnswerDateTime() {
+		return answerDateTime;
+	}
+	public void setAnswerDateTime(String answerDateTime) {
+		this.answerDateTime = answerDateTime;
+	}
+	public String getTestQuestionsType() {
+		return testQuestionsType;
+	}
+	public void setSubjecttype(int subjecttype) {
+		this.subjecttype = subjecttype;
+	}
+	public String getIntegral() {
+		return integral;
+	}
+	public void setIntegral(String integral) {
+		this.integral = integral;
+	}
+	public int getAnswerCorrect() {
+		return answerCorrect;
+	}
+	public void setAnswerCorrect(int answerCorrect) {
+		this.answerCorrect = answerCorrect;
+	}
+	public String getServiceType() {
+		return serviceType;
+	}
+	public void setServiceType(String serviceType) {
+		this.serviceType = serviceType;
 	}
 
 }

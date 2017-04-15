@@ -1,6 +1,8 @@
 package cn.microclass.bean.studyclassroom;
 
-public class Answeroptions {
+import java.io.Serializable;
+
+public class Answeroptions implements Serializable {
 
 	
 	private String answerId; //答题ID
