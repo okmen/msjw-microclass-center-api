@@ -49,7 +49,7 @@ public interface IMicroclassServer {
 	List<BaseBean> xrStudyAnswer(Study s);
 	
 	/**
-	 * 行人、非机动车驾驶人道路交通安全学习
+	 * 行人、非机动车驾驶人道路交通安全学习答题
 	 */
 	List<BaseBean> xrAnswerQuey(Study s);
 	

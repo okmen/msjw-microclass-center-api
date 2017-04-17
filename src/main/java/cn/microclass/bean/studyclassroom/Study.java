@@ -35,6 +35,10 @@ public class Study implements Serializable {
 	private String answerDateTime;//取题时间
 	
 	private String subjectName;//题目名称
+	private String answerA; //答案A
+	private String answerB; //答案B
+	private String answerC; //答案C
+	private String answerD; //答案D
 	
 	private int subjecttype; //取题类型  1代表文字类型,2代表图片类型
 	
@@ -53,7 +57,7 @@ public class Study implements Serializable {
 	private int surplusAnswe;//剩余题数
 	
 	private int answerState; //答题状态  0代表当天无法再次进行消分学习 	1可以答题	2代表今天消分学习已答对10题，请明天继续 3.已经答满20题 不能继续答题了
-	
+	private String batchResult;//批次结果
 	private List<Answeroptions> answeroptions; //答案选项
 	
 	private String subjectAnswer; //答题答案
@@ -372,6 +376,36 @@ public class Study implements Serializable {
 	}
 	public void setServiceType(String serviceType) {
 		this.serviceType = serviceType;
+	}
+	public String getAnswerA() {
+		return answerA;
+	}
+	public void setAnswerA(String answerA) {
+		this.answerA = answerA;
+	}
+	public String getAnswerB() {
+		return answerB;
+	}
+	public void setAnswerB(String answerB) {
+		this.answerB = answerB;
+	}
+	public String getAnswerC() {
+		return answerC;
+	}
+	public void setAnswerC(String answerC) {
+		this.answerC = answerC;
+	}
+	public String getAnswerD() {
+		return answerD;
+	}
+	public void setAnswerD(String answerD) {
+		this.answerD = answerD;
+	}
+	public String getBatchResult() {
+		return batchResult;
+	}
+	public void setBatchResult(String batchResult) {
+		this.batchResult = batchResult;
 	}
 
 }

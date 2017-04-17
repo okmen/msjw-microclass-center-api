@@ -1,12 +1,18 @@
 package cn.microclass.bean.studyclassroom;
 
-public class StudyRecord {
+import java.io.Serializable;
+
+public class StudyRecord implements Serializable{
 	
 	private String answerDate; //答题日期
 	
-	private  int isComplete; //是否完成
+	//private  int isComplete; //是否完成  答题结果
+	
+	private String  isComplete; //答题结果
 	
 	private int  ansLogarithm; //答题对数
+	
+	private String answerBatch;//答题批次
 	
 
 	public String getAnswerDate() {
@@ -17,11 +23,11 @@ public class StudyRecord {
 		this.answerDate = answerDate;
 	}
 
-	public int getIsComplete() {
+	public String getIsComplete() {
 		return isComplete;
 	}
 
-	public void setIsComplete(int isComplete) {
+	public void setIsComplete(String isComplete) {
 		this.isComplete = isComplete;
 	}
 
@@ -31,6 +37,14 @@ public class StudyRecord {
 
 	public void setAnsLogarithm(int ansLogarithm) {
 		this.ansLogarithm = ansLogarithm;
+	}
+
+	public String getAnswerBatch() {
+		return answerBatch;
+	}
+
+	public void setAnswerBatch(String answerBatch) {
+		this.answerBatch = answerBatch;
 	}
 	
 
