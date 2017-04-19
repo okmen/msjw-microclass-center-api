@@ -68,6 +68,8 @@ public class Study implements Serializable {
 	private String code;
 	private String msg;
 	private Object data;
+	private String decisionId;//决定书编号
+	private String trainResult;// 培训结果  
 	/**
 	 * 用户id
 	 */
@@ -406,6 +408,18 @@ public class Study implements Serializable {
 	}
 	public void setBatchResult(String batchResult) {
 		this.batchResult = batchResult;
+	}
+	public String getDecisionId() {
+		return decisionId;
+	}
+	public void setDecisionId(String decisionId) {
+		this.decisionId = decisionId;
+	}
+	public String getTrainResult() {
+		return trainResult;
+	}
+	public void setTrainResult(String trainResult) {
+		this.trainResult = trainResult;
 	}
 
 }
