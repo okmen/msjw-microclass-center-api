@@ -55,10 +55,6 @@ public interface IMicroclassServer {
 	
 	//********************************  行人、非机动车驾驶人道路交通安全学习所有方法  ********************************************************
 	
-	/**
-	 *  电动车违法学习查询
-	 */
-	List<BaseBean> ddcStudyQuery(Study s);
 	
 	/**
 	 * 电动车违法随机取题
@@ -71,40 +67,7 @@ public interface IMicroclassServer {
 	List<BaseBean> ddcAnswerQuey(Study s);
 	//******************************** 以上为 电动车学习所有方法  ********************************************************
 	
-	/**
-	 *  满学习查询
-	 */
-	List<BaseBean> mfStudyQuery(Study s);
-	
-	/**
-	 * 满学习违法随机取题
-	 */
-	List<BaseBean> mfStudyAnswer(Study s);
-	
-	/**
-	 * 满学习违法答题方法
-	 */
-	List<BaseBean> mfAnswerQuey(Study s);
-	//******************************** 以上为 满分学习所有方法  ********************************************************
-	
-	/**
-	 *  B类习查询
-	 */
-	List<BaseBean> blStudyQuery(Study s);
-	
-	/**
-	 * B类学习违法随机取题
-	 */
-	List<BaseBean> blStudyAnswer(Study s);
-	
-	/**
-	 * B类学习违法答题方法
-	 */
-	List<BaseBean> blAnswerQuey(Study s);
-	//******************************** 以上为B类分学习所有方法  ********************************************************
-	
-	
-	List<BaseBean> classroomStudyfind(Study s);
+
 	
 	
 	
