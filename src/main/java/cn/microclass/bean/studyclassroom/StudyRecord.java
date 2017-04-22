@@ -46,6 +46,15 @@ public class StudyRecord implements Serializable{
 	public void setAnswerBatch(String answerBatch) {
 		this.answerBatch = answerBatch;
 	}
+
+	@Override
+	public String toString() {
+		return "StudyRecord [answerDate=" + answerDate + ", isComplete=" + isComplete + ", ansLogarithm=" + ansLogarithm
+				+ ", answerBatch=" + answerBatch + ", getAnswerDate()=" + getAnswerDate() + ", getIsComplete()="
+				+ getIsComplete() + ", getAnsLogarithm()=" + getAnsLogarithm() + ", getAnswerBatch()="
+				+ getAnswerBatch() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
 	
 
 }

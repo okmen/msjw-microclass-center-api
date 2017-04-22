@@ -421,5 +421,22 @@ public class Study implements Serializable {
 	public void setTrainResult(String trainResult) {
 		this.trainResult = trainResult;
 	}
+	@Override
+	public String toString() {
+		return "Study [classroomId=" + classroomId + ", userName=" + userName + ", drive=" + drive + ", identityCard="
+				+ identityCard + ", scoreStartDate=" + scoreStartDate + ", scoreEndDate=" + scoreEndDate + ", integral="
+				+ integral + ", studyRecord=" + studyRecord + ", answerDate=" + answerDate + ", isComplete="
+				+ isComplete + ", ansLogarithm=" + ansLogarithm + ", mobilephone=" + mobilephone + ", subjectId="
+				+ subjectId + ", interfaceId=" + interfaceId + ", answerDateTime=" + answerDateTime + ", subjectName="
+				+ subjectName + ", answerA=" + answerA + ", answerB=" + answerB + ", answerC=" + answerC + ", answerD="
+				+ answerD + ", subjecttype=" + subjecttype + ", testQuestionsType=" + testQuestionsType
+				+ ", serviceType=" + serviceType + ", subjectImg=" + subjectImg + ", answerTime=" + answerTime
+				+ ", answererror=" + answererror + ", surplusAnswe=" + surplusAnswe + ", answerState=" + answerState
+				+ ", batchResult=" + batchResult + ", answeroptions=" + answeroptions + ", subjectAnswer="
+				+ subjectAnswer + ", answerCount=" + answerCount + ", answerCorrect=" + answerCorrect + ", ipAddress="
+				+ ipAddress + ", userSource=" + userSource + ", code=" + code + ", msg=" + msg + ", data=" + data
+				+ ", decisionId=" + decisionId + ", trainResult=" + trainResult + ", userid=" + userid + ", userpwd="
+				+ userpwd + ", url=" + url + ", method=" + method + ", key=" + key + "]";
+	}
 
 }

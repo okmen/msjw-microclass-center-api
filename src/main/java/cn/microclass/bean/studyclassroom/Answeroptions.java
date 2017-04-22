@@ -24,5 +24,12 @@ public class Answeroptions implements Serializable {
 	public void setAnswerName(String answerName) {
 		this.answerName = answerName;
 	}
+
+	@Override
+	public String toString() {
+		return "Answeroptions [answerId=" + answerId + ", answerName=" + answerName + ", getAnswerId()=" + getAnswerId()
+				+ ", getAnswerName()=" + getAnswerName() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
 	
 }
