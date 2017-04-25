@@ -7,6 +7,8 @@ public class Answeroptions implements Serializable {
 	
 	private String answerId; //答题ID
 	
+	private String  answerIds;//答题隐藏ID
+	
 	private String answerName; //答题名称
 
 	public String getAnswerId() {
@@ -30,6 +32,14 @@ public class Answeroptions implements Serializable {
 		return "Answeroptions [answerId=" + answerId + ", answerName=" + answerName + ", getAnswerId()=" + getAnswerId()
 				+ ", getAnswerName()=" + getAnswerName() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
 				+ ", toString()=" + super.toString() + "]";
+	}
+
+	public String getAnswerIds() {
+		return answerIds;
+	}
+
+	public void setAnswerIds(String answerIds) {
+		this.answerIds = answerIds;
 	}
 	
 }
