@@ -1,13 +1,8 @@
 package cn.microclass.service;
 
 import java.util.List;
-import java.util.Map;
 
-import cn.microclass.bean.DeviceBean;
-import cn.microclass.bean.Token;
-import cn.microclass.bean.UserOpenidBean;
-import cn.microclass.bean.UserRegInfo;
-import cn.microclass.bean.WechatUserInfoBean;
+import cn.microclass.bean.AppVersion;
 import cn.microclass.bean.studyclassroom.Study;
 import cn.sdk.bean.BaseBean;
 
@@ -70,7 +65,12 @@ public interface IMicroclassService {
 	//******************************** 以上为 电动车学习所有方法  ********************************************************
 	
 
-	
+	/**
+	 * 根据app系统获取对应最新版本
+	 * @param system 系统
+	 * @return
+	 */
+    public AppVersion queryNewestAppVersion(String system);
 	
 	
 
